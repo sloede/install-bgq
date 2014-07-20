@@ -1,7 +1,13 @@
-rpm -Uhv --dbpath /homeb/zam/scprod/bgclang/rpm --prefix /bgsys/local/clang \
-        bgclang-binutils-*.ppc64.rpm \
-	bgclang-r*.ppc64.rpm \
-        bgclang-compiler-rt-r*.ppc64.rpm \
-        bgclang-libcxx-r*.rpm \
-        bgclang-libomp-r*.ppc64.rpm \
-        bgclang-sleef-r*.ppc64.rpm
+VERSION=r209570-20140527
+
+RPMDIR=/homeb/zam/scprod/bgclang/rpms/$VERSION
+RPMDBPATH=/homeb/zam/scprod/bgclang/rpm
+PREFIX_BASE=/bgsys/local/clang
+
+rpm -Uhv --dbpath $RPMDBPATH --prefix $PREFIX_BASE/$VERSION \
+        $RPMDIR/bgclang-binutils-*.ppc64.rpm \
+	$RPMDIR/bgclang-r*.ppc64.rpm \
+        $RPMDIR/bgclang-compiler-rt-r*.ppc64.rpm \
+        $RPMDIR/bgclang-libcxx-r*.rpm \
+        $RPMDIR/bgclang-libomp-r*.ppc64.rpm \
+        $RPMDIR/bgclang-sleef-r*.ppc64.rpm
