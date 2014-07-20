@@ -1,0 +1,7 @@
+VERSION=r209570-20140527
+
+PREFIX_BASE=/bgsys/local/clang
+GCC472_PATH=/bgsys/local/clang/V1R2M1_base_4.7.2
+
+sed -i.O "s@new_floor=/bgsys/drivers/toolchain/\${dvr}_base_4.7.2@new_floor=$GCC472_PATH@g" $PREFIX_BASE/$VERSION/bin/bgclang
+
