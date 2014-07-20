@@ -1,3 +1,11 @@
-rpm -Uhv --dbpath /homeb/zam/scprod/bgclang/rpm --prefix /bgsys/local/clang bgclang-stage1-3.4-1.ppc64.rpm bgclang-stage1-libcxx-3.4-2.ppc64.rpm
+VERSION=r209570-20140527
+
+RPMDIR=/homeb/zam/scprod/bgclang/rpms_$VERSION
+RPMDBPATH=/homeb/zam/scprod/bgclang/rpm
+PREFIX_BASE=/bgsys/local/clang
+
+rpm -Uhv --dbpath $RPMDBPATH --prefix $PREFIX_BASE/$VERSION \
+$RPMDIR/bgclang-stage1-3.4-1.ppc64.rpm \
+$RPMDIR/bgclang-stage1-libcxx-3.4-2.ppc64.rpm
 # /bgsys/local/clang
 
