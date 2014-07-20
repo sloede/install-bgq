@@ -1,0 +1,7 @@
+rpm -Uhv --dbpath /homeb/zam/scprod/bgclang/rpm --prefix /bgsys/local/clang \
+        bgclang-binutils-*.ppc64.rpm \
+	bgclang-r*.ppc64.rpm \
+        bgclang-compiler-rt-r*.ppc64.rpm \
+        bgclang-libcxx-r*.rpm \
+        bgclang-libomp-r*.ppc64.rpm \
+        bgclang-sleef-r*.ppc64.rpm

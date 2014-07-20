@@ -1,0 +1,3 @@
+rpm -Uhv --dbpath /homeb/zam/scprod/bgclang/rpm --prefix /bgsys/local/clang vpkg-bin-sh-*.ppc64.rpm
+# /bgsys/local/clang
+
