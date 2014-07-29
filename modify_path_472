@@ -1,7 +1,16 @@
+# Full version: r<REV>-<YYYYMMDD>
 VERSION=r209570-20140527
 
+################################################################################
+# There should be no need to change anything from here on
+################################################################################
+
+# Prefix base (w/o version) of clang installations
 PREFIX_BASE=/bgsys/local/clang
+
+# Path to gcc/4.7.2 files
 GCC472_PATH=/bgsys/local/clang/V1R2M1_base_4.7.2
 
+# Modify bgclang script and save original with .O extension as backup
+set -x
 sed -i.O "s@new_floor=/bgsys/drivers/toolchain/\${dvr}_base_4.7.2@new_floor=$GCC472_PATH@g" $PREFIX_BASE/$VERSION/bin/bgclang
-
