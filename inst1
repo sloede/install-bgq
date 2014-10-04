@@ -7,7 +7,7 @@ VERSION=r217688-20140912
 ################################################################################
 
 # Directory where the rpm files are located
-RPMDIR=/homeb/zam/scprod/bgclang/rpms_$VERSION
+RPMDIR=/homeb/zam/scprod/bgclang/rpms/$VERSION
 
 # RPM database path
 RPMDBPATH=/homeb/zam/scprod/bgclang/rpm

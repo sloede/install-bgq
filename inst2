@@ -7,7 +7,7 @@ VERSION=r217688-20140912
 ################################################################################
 
 # Directory where the rpm files are located
-RPMDIR=/homeb/zam/scprod/bgclang/rpms_$VERSION
+RPMDIR=/homeb/zam/scprod/bgclang/rpms/$VERSION
 
 # RPM database path
 RPMDBPATH=/homeb/zam/scprod/bgclang/rpm
@@ -19,7 +19,8 @@ PREFIX_BASE=/bgsys/local/clang
 set -x
 rpm -Uhv --dbpath $RPMDBPATH --prefix $PREFIX_BASE/$VERSION \
         $RPMDIR/bgclang-binutils-*.ppc64.rpm \
-	$RPMDIR/bgclang-r*.ppc64.rpm \
+        $RPMDIR/bgclang-gdb-*.ppc64.rpm \
+        $RPMDIR/bgclang-r*.ppc64.rpm \
         $RPMDIR/bgclang-compiler-rt-r*.ppc64.rpm \
         $RPMDIR/bgclang-libcxx-r*.rpm \
         $RPMDIR/bgclang-libomp-r*.ppc64.rpm \
