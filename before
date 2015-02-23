@@ -2,4 +2,4 @@
 . config
 
 # Create new RPM database directory
-mkdir $RPMDBPATH
+mkdir -p $RPMDBPATH
