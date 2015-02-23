@@ -11,7 +11,7 @@ VERSION=r220548-20141024
 RPMDIR=/homeb/zam/scprod/bgclang/rpms/$VERSION
 
 # RPM database path
-RPMDBPATH=/homeb/zam/scprod/bgclang/rpm
+RPMDBPATH=/homeb/zam/scprod/bgclang/rpm/$VERSION
 
 # Prefix base (w/o version) of clang installations
 PREFIX_BASE=/bgsys/local/clang
