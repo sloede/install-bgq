@@ -1,3 +1,5 @@
+#!/bin/bash
+
 # Load configuration data
 . config
 
