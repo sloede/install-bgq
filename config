@@ -1,9 +1,3 @@
-# URL for nightly builds overview
-NIGHTLYBUILDSURL=http://www.mcs.anl.gov/~hfinkel/bgclang/index.html
-
-# URL of RPM directory with nightly builds
-RPMURL=http://www.mcs.anl.gov/~hfinkel/bgclang/RPMS/ppc64
-
 # Directory where the rpm files are located
 RPMDIR=/homeb/zam/scprod/bgclang/rpms/$VERSION
 
@@ -15,3 +9,9 @@ PREFIX_BASE=/bgsys/local/clang
 
 # Path to gcc/4.7.2 files
 GCC472_PATH=/bgsys/local/clang/V1R2M1_base_4.7.2
+
+# URL for nightly builds overview
+NIGHTLYBUILDSURL=http://www.mcs.anl.gov/~hfinkel/bgclang/index.html
+
+# URL of RPM directory with nightly builds
+RPMURL=http://www.mcs.anl.gov/~hfinkel/bgclang/RPMS/ppc64
