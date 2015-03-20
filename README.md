@@ -42,7 +42,7 @@ Installing bgclang
 Run `./install.sh <version>`.
 
 Optional: if you need change the location of the GCC 4.7.2 toolchain files, you
-need to run `./modify_path_472.sh` after the installation.
+need to run `./modify_path_472.sh <version>` after the installation.
 
 
 Contribute
