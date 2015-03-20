@@ -2,7 +2,13 @@ bgclang installation
 ====================
 
 This is a collection of scripts to automate the installation of bgclang nightly
-builds.
+builds. The main website for bgclang is
+
+https://trac.alcf.anl.gov/projects/llvm-bgq
+
+while the nightly builds can be found here:
+
+http://www.mcs.anl.gov/~hfinkel/bgclang/
 
 
 Preparations
@@ -30,8 +36,8 @@ Find out current nightly bgclang version:
 Run `./download.sh <version>` to download all RPMs.
 
 
-Installing clang
-----------------
+Installing bgclang
+------------------
 
 Run `./install.sh <version>`.
 
@@ -44,7 +50,7 @@ Contribute
 
 The bgclang install scripts are currenly maintained by:
 
-Michael Schlottke <m.schlottke@fz-juelich.de> (+49 2461 62-2326)
+Michael Schlottke (<m.schlottke@fz-juelich.de>)
 
 Feel free to send patches/pull requests to fix broken features or to improve the
 overall usability.
