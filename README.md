@@ -35,13 +35,16 @@ Installing clang
 
 Run `./install.sh <version>`.
 
+Optional: if you need change the location of the GCC 4.7.2 toolchain files, you
+need to run `./modify_path_472.sh` after the installation.
+
 
 Contribute
 ----------
 
-The bgclang install scripts are maintained by:
+The bgclang install scripts are currenly maintained by:
 
 Michael Schlottke <m.schlottke@fz-juelich.de> (+49 2461 62-2326)
 
-Feel free to send me patches/pull requests to fix broken features or to improve
-the overall usability.
+Feel free to send patches/pull requests to fix broken features or to improve the
+overall usability.
