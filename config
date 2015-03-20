@@ -1,4 +1,7 @@
-# URL of nightly-built RPM directory
+# URL for nightly builds overview
+NIGHTLYBUILDSURL=http://www.mcs.anl.gov/~hfinkel/bgclang/index.html
+
+# URL of RPM directory with nightly builds
 RPMURL=http://www.mcs.anl.gov/~hfinkel/bgclang/RPMS/ppc64
 
 # Directory where the rpm files are located
