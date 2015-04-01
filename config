@@ -17,3 +17,9 @@ NIGHTLYBUILDSURL=http://www.mcs.anl.gov/~hfinkel/bgclang/index.html
 
 # URL of RPM directory with nightly builds
 RPMURL=http://www.mcs.anl.gov/~hfinkel/bgclang/RPMS/ppc64
+
+# Symbolic link path for nightly version
+NIGHTLY_BUILD_DIR=$PREFIX_BASE/nightly
+
+# If set to '1', the previous nightly build of bgclang will be removed
+REMOVE_OLD_NIGHTLY_BUILD=1
