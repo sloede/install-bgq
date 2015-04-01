@@ -1,3 +1,5 @@
+# Use '$VERSION' whenever you need the 'rXXXX-YYYYMMDD' version string
+
 # Directory where the rpm files are located
 RPMDIR=/homeb/zam/scprod/bgclang/rpms/$VERSION
 
