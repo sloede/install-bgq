@@ -45,6 +45,18 @@ Optional: if you need change the location of the GCC 4.7.2 toolchain files, you
 need to run `./modify_path_472.sh <version>` after the installation.
 
 
+Cron job
+--------
+
+You can automate the installation of the nightly builds by calling `cron.sh`
+through a cron job. It will fetch the current nightly version from the bgclang
+nightly builds website (see above), check if it needs to be installed, download
+all packages and install it. Additionally, it will create a `nightly` symbolic
+link that points to the new version. By default, the previous nightly version is
+removed after a sucessful installation of the new build, but this can be
+disabled in the `config` file.
+
+
 Contribute
 ----------
 
