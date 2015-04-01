@@ -20,10 +20,10 @@ DIR=$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )
 
 # Remove bgclang directories
 echo "Removing RPM directory $RPMDIR..."
-# rm -rf $RPMDIR
+rm -rf $RPMDIR
 echo "Removing RPM database directory $RPMDBPATH..."
-# rm -rf $RPMDBPATH
+rm -rf $RPMDBPATH
 echo "Removing install directory $PREFIX_BASE/$VERSION..."
-# rm -rf $PREFIX_BASE/$VERSION
+rm -rf $PREFIX_BASE/$VERSION
 
 echo "Done."
