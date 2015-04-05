@@ -38,6 +38,11 @@ rpm -Uhv --dbpath $RPMDBPATH --prefix $PREFIX_BASE/$VERSION \
 $RPMDIR/bgclang-stage2-*.ppc64.rpm
 echo
 
+echo "Installing gcc/4.7.2 fixup packages..."
+rpm -Uhv --dbpath $RPMDBPATH --prefix $PREFIX_BASE/$VERSION \
+$RPMDIR/toolchain-fixup-4.7.2-*.ppc64.rpm
+echo
+
 echo "Installing bgclang packages..."
 rpm -Uhv --dbpath $RPMDBPATH --prefix $PREFIX_BASE/$VERSION \
         $RPMDIR/bgclang-binutils-r*.ppc64.rpm \
