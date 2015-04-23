@@ -27,6 +27,7 @@ for f in vpkg-bin-sh-1-1.ppc64.rpm \
          bgclang-stage2-3.5.1-1.ppc64.rpm \
          bgclang-stage2-libcxx-3.5.1-1.ppc64.rpm \
          toolchain-fixup-4.7.2-1.ppc64.rpm \
+         toolchain-fixup-4.7.2-2.ppc64.rpm \
          bgclang-binutils-${VERSION}-1-1.ppc64.rpm \
          bgclang-compiler-rt-${VERSION}-1-1.ppc64.rpm \
          bgclang-gdb-${VERSION}-1-1.ppc64.rpm \
