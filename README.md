@@ -62,7 +62,7 @@ Contribute
 
 The bgclang install scripts are currenly maintained by:
 
-Michael Schlottke (<m.schlottke@fz-juelich.de>)
+Michael Schlottke (<m.schlottke-lakemper@fz-juelich.de>)
 
 Feel free to send patches/pull requests to fix broken features or to improve the
 overall usability.
