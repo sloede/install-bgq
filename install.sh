@@ -50,6 +50,7 @@ rpm -Uhv --dbpath $RPMDBPATH --prefix $PREFIX_BASE/$VERSION \
         $RPMDIR/bgclang-r*.ppc64.rpm \
         $RPMDIR/bgclang-compiler-rt-r*.ppc64.rpm \
         $RPMDIR/bgclang-libcxx-r*.rpm \
+        $RPMDIR/bgclang-mpich3-r*.ppc64.rpm \
         $RPMDIR/bgclang-libomp-r*.ppc64.rpm \
         $RPMDIR/bgclang-sleef-r*.ppc64.rpm
 echo

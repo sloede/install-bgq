@@ -34,6 +34,7 @@ for f in vpkg-bin-sh-1-1.ppc64.rpm \
          bgclang-gdb-${VERSION}-1-1.ppc64.rpm \
          bgclang-libcxx-${VERSION}-1-1.ppc64.rpm \
          bgclang-libomp-${VERSION}-1-1.ppc64.rpm \
+         bgclang-mpich3-${VERSION}-1-1.ppc64.rpm \
          bgclang-${VERSION}-1-1.ppc64.rpm \
          bgclang-sleef-${VERSION}-1-1.ppc64.rpm; do
   url=$RPMURL/$f
