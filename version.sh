@@ -7,6 +7,5 @@ DIR=$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )
 . $DIR/config
 
 wget -qO - $NIGHTLYBUILDSURL \
-    | grep "r[0-9][0-9]*-[0-9][0-9]*" \
-    | head -n1 \
+    | grep -m1 "r[0-9][0-9]*-[0-9][0-9]*" \
     | sed "s/.*\(r[0-9][0-9]*-[0-9][0-9]*\).*/\1/"
