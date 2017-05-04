@@ -38,6 +38,11 @@ rpm -Uhv --dbpath $RPMDBPATH --prefix $PREFIX_BASE/$VERSION \
 $RPMDIR/bgclang-stage2-*.ppc64.rpm
 echo
 
+echo "Installing stage 3 packages..."
+rpm -Uhv --dbpath $RPMDBPATH --prefix $PREFIX_BASE/$VERSION \
+$RPMDIR/bgclang-stage3-*.ppc64.rpm
+echo
+
 echo "Installing toolchain fixup packages..."
 rpm -Uhv --dbpath $RPMDBPATH --prefix $PREFIX_BASE/$VERSION \
 $RPMDIR/toolchain-fixup-4.7.2-*.ppc64.rpm
