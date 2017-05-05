@@ -33,16 +33,20 @@ Find out current nightly bgclang version:
 * automatically:
   * Run `./version.sh` and note output.
 
-Run `./download.sh <version>` to download all RPMs.
+Run `./download.sh <version>` to download all RPMs. If you would like to
+specify a patch release, you can supply it as an additional argument by running
+`./download.sh <version> <release>`, where `<release>` defaults to `1`.
 
 
 Installing bgclang
 ------------------
 
-Run `./install.sh <version>`.
+Run `./install.sh <version> [<release>]`.
+
+The patch release number `<release>` is optional and defaults to `1`.
 
 Optional: if you need change the location of the GCC 4.7.2 toolchain files, you
-need to run `./modify_path_472.sh <version>` after the installation.
+need to run `./modify_path_472.sh <version> [<release>]` after the installation.
 
 
 Cron job
