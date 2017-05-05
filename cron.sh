@@ -12,6 +12,7 @@ VERSION=$($DIR/version.sh)
 # Get currently installed nightly version
 INSTALLED=$([ -d $NIGHTLY_BUILD_DIR ] && \
             cd $NIGHTLY_BUILD_DIR && basename $(pwd -P))
+INSTALLED=${INSTALLED/%-1-1/}
 
 # Quit if current version is already installed
 echo "Current nightly build: $VERSION"
@@ -43,13 +44,13 @@ $DIR/modify_path_472.sh $VERSION
 
 # Reset link to new nightly build
 rm -f $NIGHTLY_BUILD_DIR
-ln -s $PREFIX_BASE/$VERSION $NIGHTLY_BUILD_DIR
-echo "Reset link: $NIGHTLY_BUILD_DIR now points to $PREFIX_BASE/$VERSION"
+ln -s $PREFIX_BASE/$VERSION-1-1 $NIGHTLY_BUILD_DIR
+echo "Reset link: $NIGHTLY_BUILD_DIR now points to $PREFIX_BASE/$VERSION-1-1"
 
 # Remove previous nightly build
-if [ -n "$INSTALLED" ] && [ -d "$PREFIX_BASE/$INSTALLED" ] && \
+if [ -n "$INSTALLED" ] && [ -d "$PREFIX_BASE/$INSTALLED-1-1" ] && \
     [ $REMOVE_OLD_NIGHTLY_BUILD -eq 1 ]; then
-  echo "Removing old nightly build $PREFIX_BASE/$INSTALLED..."
+  echo "Removing old nightly build $PREFIX_BASE/$INSTALLED-1-1..."
   $DIR/remove.sh $INSTALLED
 fi
 

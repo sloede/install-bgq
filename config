@@ -1,10 +1,11 @@
-# Use '$VERSION' whenever you need the 'rXXXX-YYYYMMDD' version string
+# Use '$VERSION' whenever you need the 'rXXXX-...' version string
+# Use '$RELEASE' whenever you need the patch release number
 
 # Directory where the rpm files are located
-RPMDIR=/homeb/zam/scprod/bgclang/rpms/$VERSION
+RPMDIR=/homeb/zam/scprod/bgclang/rpms/${VERSION}-1-${RELEASE}
 
 # RPM database path
-RPMDBPATH=/homeb/zam/scprod/bgclang/rpm/$VERSION
+RPMDBPATH=/homeb/zam/scprod/bgclang/rpm/${VERSION}-1-${RELEASE}
 
 # Prefix base (w/o version) of clang installations
 PREFIX_BASE=/bgsys/local/clang
