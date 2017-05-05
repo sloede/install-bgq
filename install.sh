@@ -6,10 +6,6 @@ if [ $# -lt 1 ]; then
   exit 2
 fi
 VERSION=$1
-if echo $VERSION | grep -qv "^r[0-9][0-9]*-[0-9][0-9]*$"; then
-  echo "error: bad version '$VERSION': must be formatted as 'r[0-9]+-[0-9]+'" >&2
-  exit 2
-fi
 echo "bgclang version: $VERSION"
 
 # Get location of script
